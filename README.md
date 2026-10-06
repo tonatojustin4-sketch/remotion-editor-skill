@@ -98,7 +98,7 @@ Cuenta prevista: `tonatojustin4-sketch`. Nombre: `remotion-editor-skill`. Si cam
 
 Crea un repositorio público en GitHub y sube esta carpeta. No necesitas publicar en npm: `npx github:...` toma el paquete del repositorio. El comando funcionará una vez que exista y sea accesible.
 
-La plantilla `automation/github-check.yml` permite validar la skill en Linux, macOS y Windows y generar un instalador `.tgz` en cada push o pull request. Para activarla, cópiala a `.github/workflows/check.yml` usando una conexión con permiso para workflows. El instalador por `npx` funciona sin activar Actions. Puedes generar el mismo paquete localmente:
+El workflow `.github/workflows/check.yml` está activo: valida la skill en Linux, macOS y Windows y genera un instalador `.tgz` en cada push o pull request. También puedes iniciarlo manualmente desde Actions con Run workflow. Si las pruebas pasan, descarga el artifact `remotion-editor-skill-installer` desde la ejecución. El instalador por `npx` funciona independientemente de Actions. Puedes generar el mismo paquete localmente:
 
 ```sh
 npm run check
