@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remotion Content Editor"
+  short_description: "Edita videos con subtítulos y gráficos en Remotion"
+  default_prompt: "Usa $remotion-content-editor para analizar los fragmentos de esta carpeta y entregar una edición completa con Remotion."

@@ -1,0 +1,28 @@
+{
+  "name": "remotion-editor-skill",
+  "version": "1.1.0",
+  "description": "Install a content-aware Remotion editing skill for Codex",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "remotion-editor-skill": "bin/install.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "validate": "node bin/validate.mjs",
+    "check": "npm run validate && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tonatojustin4-sketch/remotion-editor-skill.git"
+  }
+}
